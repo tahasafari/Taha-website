@@ -135,6 +135,32 @@ section{
     color: #303030;
 }
 
+@media (max-width: 950px){
+    .section-title{
+        margin-bottom: 10px;
+    }
+    .section-subtitle{
+        margin: auto;
+        width: 95%;
+        margin-bottom: 40px;
+        text-align: right;
+        left: 1%;
+    }
+}
+
+@media (max-width:850px){
+    .section-title{
+        margin-bottom: 10px;
+    }
+    .section-subtitle{
+        margin: auto;
+        width: 95%;
+        margin-bottom: 40px;
+        text-align: center;
+        left: 1%;
+    }
+}
+
 .header-top{
     display: flex;
     justify-content: space-between;
@@ -339,36 +365,37 @@ section{
 }
 
 
-@media (min-width: 600px){
+@media (max-width: 850px){
     .about-me{
         display: grid;
-        grid-template-columns: 1fr 200px;
+        
         grid-template-areas: 
-        "title img"
-        "subtitile img"
-        "text img";
+        "title"
+        "subtitile"
+        "img"
+        "text";
         grid-column-gap: 2em;
+
     }
 
     .about-me .section-title{
         grid-area: title;
+        margin: auto;
+        margin-bottom: 10px;
     }
     .about-me .section-subtitle{
         grid-row: 2;
         grid-column: 1/-1;
-        left: -1em;
-        width: calc(100% + 2.8em);
+        left: -0.8em;
+        width: 95%;
         position: relative;
-        padding-right: calc(200px + 3em);
-        padding-left: 2em;
-
     }
 
     .about-me-img{
         grid-area: img;
         box-shadow: var(--bs);
-        position: relative;
         z-index: 2;
+        margin: auto;
     }
 }
 
@@ -599,4 +626,12 @@ section{
 .about-me .resume-download-link:hover{
     transform: scale(1.05);
     cursor: pointer;
+}
+
+@media (max-width:850px){
+    .about-me .resume-download-link{
+        margin: auto;
+        position: absolute;
+        left: 30%;
+    }
 }
