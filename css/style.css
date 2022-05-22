@@ -495,66 +495,88 @@ section{
     margin-left: 80px;
 }
 
-.htmlofpage0 {
+.body-of-page0 {
     width: 100%;
-    height: 730px;
+    height: 100%;
     background: #4c4646;
     opacity: 0.9;
 }
 .scheme{
-    height: 730px;
+    height: 750px;
     width: 70%;
-    background-image: url(../img/taha-logo-final.png);
-    background-size: cover;
-    position: absolute;
     z-index: 9;
-    margin-left: 240px;
+    margin: auto;
+}
+
+.scheme img{
+    width: 100%;
+    height: 100%;
 }
 
 .scheme p{
     text-align: center;
     font-family: Garamond, serif;
     font-size: 25pt;
-    z-index: 10;
-    margin-top: 50px;
-    position: relative;
     color: white;
-    text-align: center;
 }
-.scheme .welcome-btn{
+ .welcome-btn{
     border: 3px solid white;
     padding: 15px 0;
-    position: relative;
-    width: 160px;
+    position: absolute;
+    width: 130px;
     color: white;
-    margin: 565px 440px;
-    background-color: #30303000;
+    height: 50px;
+    background-color: none;
     border-radius: 3px;
     text-decoration: none;
     text-align: center;
-    font-size: 10pt;
+    font-size: 11pt;
     text-transform: uppercase;
+    top: 300px;
+    left: 45%;
 }
 
-.scheme .welcome-btn a{
+ .welcome-btn a{
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 13pt;
-    padding: 10px 6px ;
-    border-radius: 3px;
     font-family: var(--ff-primary);
     transition: transform 200ms ease-in-out;
 }
 
-.scheme .welcome-btn:hover{
+ .welcome-btn:hover{
     transform: scale(1.05);
     opacity: 0.7;
     cursor: pointer;
 }
 
+@media (max-width: 800px){
+    .scheme img{
+        max-height: 350px;
+        max-width: 400px;
+    }
+    .welcome-btn{
+        border: 1px solid white;
+        padding: 0;
+        position: absolute;
+        width: 80px;
+        color: white;
+        background-color: none;
+        border-radius: 3px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 6pt;
+        text-transform: uppercase;
+        top: 140px;
+        left: 42%;
+        height: 20px;
+        padding-top: 5px;
+    }
+}
+
 .about-me .resume-download-link{
     border: 2px solid black;
+    margin: auto;
     text-decoration: none;
     padding: 0.5em 1.5em;
     background: black;
