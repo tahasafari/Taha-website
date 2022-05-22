@@ -551,6 +551,10 @@ section{
 }
 
 @media (max-width: 800px){
+    .scheme{
+        max-height: 750px;
+        padding-top: 200px;
+    }
     .scheme img{
         max-height: 350px;
         max-width: 400px;
@@ -567,7 +571,7 @@ section{
         text-align: center;
         font-size: 6pt;
         text-transform: uppercase;
-        top: 140px;
+        top: 340px;
         left: 42%;
         height: 20px;
         padding-top: 5px;
